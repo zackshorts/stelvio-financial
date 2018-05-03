@@ -24,13 +24,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 30px;
-  background-color: aquamarine;
+
 }
 
   #app-header {
     position: fixed;
     width: 100%;
   }
+
+
 
 </style>

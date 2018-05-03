@@ -1,13 +1,15 @@
 <template>
   <div class="nav-grid" id="nav-grid">
-    <h1>Stelvio Financial</h1>
-    <!--<span>-->
-            <!--<p v-model="date">{{this.date}}</p>-->
-            <!--<div v-model="time">{{this.time}}</div>-->
-    <!--</span>-->
+    <h1><a href="">Stelvio Financial</a></h1>
+
     <ul id="menu">
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/about">About</router-link></li>
+
+      <li @click="activePage = 'contact'" :class="{highlight:activePage === 'contact'}"><router-link to="/contact-us" >Contact Us</router-link></li>
+      <li @click="activePage = 'who'" :class="{highlight:activePage === 'who'}"><router-link to="/who-we-serve" >Who We Serve</router-link></li>
+      <li @click="activePage = 'what'" :class="{highlight:activePage === 'what'}"><router-link to="/what-we-do" >What We Do</router-link></li>
+      <li @click="activePage = 'about'" :class="{highlight:activePage === 'about'}"><router-link to="/who-we-are" >Who We Are</router-link></li>
+      <li @click="activePage = 'home'" :class="{highlight:activePage === 'home'}"><router-link to="/" >Home</router-link></li>
+
     </ul>
 
   </div>
@@ -19,17 +21,12 @@
 
       data() {
           return {
-            state: '',
-            date: '',
-            time: ''
+            activePage: 'home'
           }
       },
 
-
-
       created: function () {
-          this.startClock();
-          this.date = new Date();
+          this.activePage = 'home'
       },
 
       computed: {
@@ -37,29 +34,6 @@
       },
 
       methods: {
-          startClock: function () {
-
-            let today = new Date();
-            let h = today.getHours();
-            if( h > 12 ) h-=12;
-            let m = today.getMinutes();
-            let s = today.getSeconds();
-            m = this.checkTime(m);
-            s = this.checkTime(s);
-            this.time =
-              h + ":" + m + ":" + s;
-
-            let t = setTimeout(this.startClock, 500);
-          },
-
-        checkTime: function (i) {
-          if (i < 10) {i = "0" + i}  // add zero in front of numbers < 10
-          return i;
-        },
-
-        formatDate: function (date) {
-            return moment(date, 'DD/MM'),format('DD/MM')
-        }
       }
     }
 </script>
@@ -73,6 +47,21 @@
 
   /* NAVIGATION GRID SELECTORS*/
 
+  .highlight {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+  h1 a {
+    text-decoration: none;
+    color: black;
+  }
+
+  h1 a:hover {
+    color: #347089;
+    transition: color 0.8s ease;
+  }
+
   .nav-grid {
     display: grid;
     grid-template-rows: 80px;
@@ -81,30 +70,36 @@
     align-items: center;
   }
 
-  .nav-grid a {
-    margin-left: 15px;
-  }
-
   ul {
     list-style-type:none;
     margin:0;
     padding:0;
   }
 
-  /*Create a horizontal list with spacing*/
   li {
     display:inline-block;
     float: right;
-    margin-right: 1px;
+    margin-right: 10px;
+
   }
-  /*Style for menu links*/
+
   li a {
     display:block;
-    margin-right: 20px;
-    height: 50px;
+    height: 30px;
     text-align: center;
-    line-height: 50px;
-    color: #666;
+    line-height: 30px;
+    color: black;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
+
+  li:hover {
+    background-color: #ddd;
+    transition: background-color ease 0.8s;
+    border-radius: 5px;
   }
 
 </style>

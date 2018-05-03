@@ -1,48 +1,10 @@
 <template>
   <div>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-    <img src="../assets/logo.png">
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-    <img src="../assets/logo.png">
 
-    <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
+<br><br><br><br>
+    <h1 id="test">HOME</h1>
 
-    <img src="../assets/logo.png">
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
 
-    <img src="../assets/logo.png">
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
-  <p>test</p>
   </div>
 </template>
 
@@ -53,8 +15,17 @@
     }
 </script>
 
-<style scoped>
+<style>
 
+  #test {
+    margin-top: 100px;
+    background-color: black;
+font-size: 100px;
+  }
 
+  html {
+    background: url("../assets/stelvio-images/road.jpg") no-repeat center fixed !important;
+
+  }
 
 </style>
