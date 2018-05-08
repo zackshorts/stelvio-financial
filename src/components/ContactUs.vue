@@ -1,8 +1,13 @@
 <template>
 
 <div>
-  <br><br><br><br>
+  <br>
   <h1 id="test">Contact Us</h1>
+  <h1 id="test">Contact Us</h1>
+  <h1 id="test">Contact Us</h1>
+  <h1 id="test">Contact Us</h1>
+  <h1 id="test">Contact Us</h1>
+
 </div>
 
 </template>
@@ -17,11 +22,11 @@
   #test {
     margin-top: 100px;
     background-color: black;
-font-size: 100px;
+font-size: 6rem;
+    text-align: center;
+
   }
 
-  html {
-    background: url("../assets/stelvio-images/night.jpg") no-repeat center fixed !important;
-  }
+
 
 </style>

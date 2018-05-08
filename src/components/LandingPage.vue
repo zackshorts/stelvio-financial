@@ -1,10 +1,10 @@
 <template>
   <div>
-
-<br><br><br><br>
+    <br>
     <h1 id="test">HOME</h1>
-
-
+    <div>
+      <img class="picture-stretch" src="../assets/stelvio-images/night.jpg">
+    </div>
   </div>
 </template>
 
@@ -17,15 +17,30 @@
 
 <style>
 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   #test {
     margin-top: 100px;
     background-color: black;
-font-size: 100px;
+    font-size: 6rem;
+    text-align: center;
   }
 
-  html {
-    background: url("../assets/stelvio-images/road.jpg") no-repeat center fixed !important;
-
+  img {
+    height: 300px;
   }
+
+    .picture-stretch {
+      width: 100%;
+      object-fit: cover;
+      object-position: 0 80%;
+    }
+
+
+
+
 
 </style>

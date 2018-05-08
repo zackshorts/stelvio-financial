@@ -32,11 +32,6 @@ export default new Router({
       component: WhatWeDo
     },
     {
-      path: '/who-we-serve',
-      name: 'who-we-serve',
-      component: WhoWeServe
-    },
-    {
       path: '/contact-us',
       name: 'contact-us',
       component: ContactUs
