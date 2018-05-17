@@ -7,7 +7,7 @@
     </div>
   <div id="intro-grid">
       <h3 id="intro">From personal wealth management to consulting, we’re one of the most trusted investment firms in Arizona</h3>
-      <img id="landing-logo" src="../assets/logo.png">   
+      <img id="landing-logo" src="../assets/logo.png">
   </div>
   <div id="main-content-grid">
     <!-- LAYER ONE -->
@@ -121,6 +121,28 @@
       object-position: 0 80%;
     }
 
+
+  @media (max-width: 900px) {
+    #intro-grid {
+
+      grid-template-columns: 1fr;
+      grid-template-rows: 20vh 20vh;
+      font-size: 4rem;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+
+  @media (max-width: 500px) {
+    #intro-grid{
+      font-size: 2rem;
+    }
+
+    #landing-logo {
+
+    }
+  }
 
 
 
