@@ -142,7 +142,7 @@
 
   h1 a:hover {
     /*color: #347089;*/
-    color: yellow;
+    color: #424242;
     transition: color 0.8s ease;
   }
 
