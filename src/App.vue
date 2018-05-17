@@ -40,9 +40,9 @@ export default {
   }
 
 
-  #app-footer {
-    height: 60vh;
-  }
+  /*#app-footer {*/
+    /*height: 60vh;*/
+  /*}*/
 
 
 </style>

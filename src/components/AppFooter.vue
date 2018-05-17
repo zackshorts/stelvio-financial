@@ -51,8 +51,18 @@
 
   @media (max-width: 900px) {
     .bottom-footer {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 670px) {
+    .bottom-footer {
+      grid-template-columns: 1fr ;
       grid-template-rows: 1fr 1fr 1fr 1fr;
+      text-align: center;
+
     }
   }
 </style>

@@ -3,6 +3,7 @@
     <br>
     <h1 id="test">HOME</h1>
     <div>
+      <h2>Stelvio is ranked number one in the nation.</h2>
       <img class="picture-stretch" src="../assets/stelvio-images/night.jpg">
     </div>
   </div>
@@ -28,6 +29,8 @@
     font-size: 6rem;
     text-align: center;
   }
+
+
 
   img {
     height: 300px;
