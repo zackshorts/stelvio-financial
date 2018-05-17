@@ -161,7 +161,6 @@
   }
 
   li {
-    display:inline-block;
     float: right;
     margin-right: 10px;
     font-size: 3rem;

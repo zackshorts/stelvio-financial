@@ -47,6 +47,7 @@
 
   .bottom-footer div a {
     display: block;
+    color: white;
   }
 
   @media (max-width: 900px) {

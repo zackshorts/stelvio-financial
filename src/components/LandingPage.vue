@@ -1,9 +1,8 @@
 <template>
   <div>
     <br>
-    <h1 id="test">HOME</h1>
-    <div>
-      <h2>Stelvio is ranked number one in the nation.</h2>
+    <div id="landing-picture">
+      <h2 id="landing-picture-description">The Stelvio Pass is one big butt crack over in italy somewhere</h2>
       <img class="picture-stretch" src="../assets/stelvio-images/night.jpg">
     </div>
   </div>
@@ -23,8 +22,26 @@
     padding: 0;
   }
 
+  #landing-picture {
+    position: relative;
+    margin-top: 11rem;
+  }
+
+  #landing-picture-description {
+      position: absolute;
+      font-size: 4rem;
+      width: 70%;
+      background-color: #00000089;
+      top: 2rem;
+      right: 2rem;
+      color: white;
+      text-align: center;
+      padding: .5rem;
+    
+  }
+
   #test {
-    margin-top: 100px;
+    margin-top: 120px;
     background-color: black;
     font-size: 6rem;
     text-align: center;
@@ -33,7 +50,7 @@
 
 
   img {
-    height: 300px;
+    height: 70vh;
   }
 
     .picture-stretch {
