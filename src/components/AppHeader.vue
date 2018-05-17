@@ -113,7 +113,7 @@
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: antiquewhite;
     display: block;
     transition: 0.3s;
     cursor: pointer;
@@ -138,11 +138,12 @@
     padding-bottom: 10px;
     font-size: 4rem;
     text-align: left;
+    transition: color 0.8s ease;
   }
 
   h1 a:hover {
     /*color: #347089;*/
-    color: #424242;
+    color: rgb(119, 148, 158);;
     transition: color 0.8s ease;
   }
 
@@ -175,7 +176,11 @@
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
+  }
 
+  li {
+    transition: background-color ease 0.8s;
+     border-radius: 5px;
   }
 
 
