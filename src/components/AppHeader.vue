@@ -70,7 +70,7 @@
   /* NAVIGATION GRID SELECTORS*/
 
   .highlight {
-    background-color: #ddd;
+    background-color: #A4CFBE;
     border-radius: 5px;
   }
 
@@ -96,7 +96,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0, 0.92);
+    background-color: rgba(0,0,0, 0.96);
     overflow-y: hidden;
     animation: ease;
   }
@@ -115,12 +115,13 @@
     font-size: 36px;
     color: antiquewhite;
     display: block;
-    transition: 0.3s;
+    transition: color 0.5s ease;
     cursor: pointer;
   }
 
   .overlay a:hover, .overlay a:focus {
-    color: lightblue;
+    transition: color 0.5s ease;
+    color: #455c50;
   }
 
   #hamburger-menu {
@@ -138,15 +139,14 @@
     padding-bottom: 10px;
     font-size: 4rem;
     text-align: left;
-    transition: color 0.8s ease;
+    transition: color 0.5s ease;
   }
 
   h1 a:hover {
     /*color: #347089;*/
-    color: rgb(119, 148, 158);;
-    transition: color 0.8s ease;
+    color: #455c50;
+    transition: color 0.5s ease;
   }
-
   .nav-grid {
     display: grid;
     grid-template-rows: 12rem;
@@ -185,7 +185,7 @@
 
 
   li:hover {
-    background-color: #ddd;
+    background-color: #A4CFBE;
     transition: background-color ease 0.8s;
     border-radius: 5px;
   }
@@ -199,6 +199,7 @@
       display: unset;
       text-decoration: none;
       border: none;
+      border-radius: 12px;
       background: none;
       float: left;
       font-size: 3rem;
@@ -209,13 +210,14 @@
       width: fit-content;
       position: absolute;
       right: 1rem;
+      transition: background-color ease 0.8s;
 
     }
 
     #hamburger-menu:hover {
-      background-color: #ddd;
+      background-color: #A4CFBE;
       border-radius: 12px;
-      transition: .3s ease-in-out;
+      transition: background-color .8s ease;
     }
 
     button:focus { outline: none; }
