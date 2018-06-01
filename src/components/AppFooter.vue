@@ -40,14 +40,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    background-color: #333333;
+    background-color: #F4F7D9;
     font-size: 6rem;
-    color: white;
+    color: #29494C;
   }
 
   .bottom-footer div a {
     display: block;
-    color: white;
+    color: #29494C;
   }
 
   @media (max-width: 900px) {
@@ -61,9 +61,10 @@
   @media (max-width: 670px) {
     .bottom-footer {
       grid-template-columns: 1fr ;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(4, auto);
       text-align: center;
-
+      grid-gap: 3rem;
+      margin-bottom: 3rem;
     }
   }
 </style>

@@ -5,6 +5,7 @@
 
       <a class="closebtn" id="exitButton"  v-on:click="closeMenu">&times;</a>
       <div class="overlay-content" v-on:click="closeMenu">
+
         <router-link to="/" >Home</router-link>
         <router-link to="/who-we-are" >Who We Are</router-link>
         <router-link to="/what-we-do" >What We Do</router-link>
@@ -113,7 +114,7 @@
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: antiquewhite;
+    color: white;
     display: block;
     transition: color 0.5s ease;
     cursor: pointer;
@@ -121,7 +122,7 @@
 
   .overlay a:hover, .overlay a:focus {
     transition: color 0.5s ease;
-    color: #455c50;
+    color: #3E423A;
   }
 
   #hamburger-menu {
@@ -172,7 +173,7 @@
     height: 30px;
     text-align: center;
     line-height: 30px;
-    color: black;
+    color: #29494C;
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;

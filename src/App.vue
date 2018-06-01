@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <app-header id="app-header"></app-header>
+    <transition name="fade" mode="out-in">
     <router-view/>
+    </transition>
     <app-footer id="app-footer"></app-footer>
   </div>
 </template>
@@ -23,15 +25,27 @@ export default {
 
 * {
   font-size: 62.5%;
+  /*font-family: 'Work Sans', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
 }
 
+.fade-enter-active {
+  transition: opacity .8s;
+}
+
+.fade-leave-active {
+  transition: opacity 0s;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0;
+}
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  background-color: black;
+  color: black;
+  background-color: #3E423A;
 }
 
   #app-header {

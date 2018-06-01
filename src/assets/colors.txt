@@ -1,0 +1,3 @@
+darker green: #455c50
+lighter green: #A4CFBE
+lighter blue: #44787D
