@@ -55,9 +55,4 @@ export default {
   }
 
 
-  /*#app-footer {*/
-    /*height: 60vh;*/
-  /*}*/
-
-
 </style>

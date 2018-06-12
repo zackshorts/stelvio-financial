@@ -110,6 +110,17 @@
                           ". . landing-4 .";
   }
 
+  h3:after {
+    background: none repeat scroll 0 0 white;
+    bottom: -6px;
+    content: "";
+    display: block;
+    height: 6px;
+    position: relative;
+    width: 120px;
+    border-radius: 5px;
+  }
+
   #landing-1 {
     grid-area: landing-1;
   }
@@ -124,12 +135,14 @@
   }
 
   #landing-1 p, #landing-2 p, #landing-3 p, #landing-4 p {
+    margin-top: 9px;
     text-align: justify;
   }
   #landing-1 h3, #landing-2 h3, #landing-3 h3, #landing-4 h3 {
-    text-align: center;
+    text-align: left;
     font-size: 3.5rem;
   }
+
 
 
   #test {

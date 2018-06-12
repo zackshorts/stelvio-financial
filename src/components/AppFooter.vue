@@ -12,11 +12,11 @@
         <router-link to="/contact-us" >Contact Us</router-link>
       </div>
       <div>
-        <h3>Location 1</h3>
+        <h4>Location 1</h4>
         <p>2514 East Sierra Madre Avenue</p>
       </div>
       <div>
-        <h3>Location 2</h3>
+        <h4>Location 2</h4>
         <p>1020 E Center Street Apt 13</p>
       </div>
     </div>
@@ -37,6 +37,8 @@
   }
 
   .bottom-footer {
+    padding: 2rem;
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -55,6 +57,8 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       text-align: center;
+
+      grid-gap: 4rem;
     }
   }
 
@@ -63,8 +67,7 @@
       grid-template-columns: 1fr ;
       grid-template-rows: repeat(4, auto);
       text-align: center;
-      grid-gap: 3rem;
-      margin-bottom: 3rem;
+      grid-gap: 4rem;
     }
   }
 </style>
