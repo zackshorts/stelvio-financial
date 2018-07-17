@@ -2,35 +2,35 @@
   <div>
     <br>
     <div id="landing-picture">
-      <h2 id="landing-picture-description">The Stelvio Pass is one windy butt crack over in italy somewhere</h2>
+      <h2 id="landing-picture-description">The Stelvio Pass is a good place over in italy somewhere</h2>
       <img class="picture-stretch" src="../assets/stelvio-images/night.jpg">
     </div>
   <div id="intro-grid">
-      <h3 id="intro">From personal wealth management to consulting, we’re one of the most trusted investment firms in Arizona</h3>
-      <img id="landing-logo" src="../assets/logo.png">
+      <h3 id="intro" data-aos="fade-up">From personal wealth management to consulting, we’re one of the most trusted investment firms in Arizona</h3>
+      <img id="landing-logo" data-aos="fade-down" src="../assets/logo.png">
   </div>
   <div id="main-content-grid">
     <!-- LAYER ONE -->
-    <div id="landing-1">
+    <div id="landing-1" data-aos="fade-right">
         <h3>Personal Wealth Management</h3>
         <p>We’re all in. We’re in for your future. For your peace of mind. For the freedom that comes from knowing that the college tuition will be there. That you can retire confidently—and completely. That the person you said “I do” to will be taken care of today, tomorrow and always.</p>
         <p>At ASI, we take personal wealth management personally. It’s more than what we do. It’s who we are.</p>
         <router-link to="/what-we-do"><strong>See what sets us apart.</strong></router-link>
     </div>
     <!-- LAYER TWO -->
-    <div id="landing-2">
+    <div id="landing-2" data-aos="fade-left">
       <h3>Consulting Services</h3>
       <p>It’s no surpise that some of the region’s most prestigious individuals and most respected companies trust ASI for consulting services. From retirement plans and endowments to corporate asset optimization and advanced planning, our expert team puts their extensive experience, state-of-the-art analytical systems and complete qualitative and quantitative data to work for you, creating strategic plans that deliver results. This is consulting done right. That is ASI.</p>
       <p>Read to get down to business?</p>
     </div>
     <!-- LAYER THREE -->
-    <div id="landing-3">
+    <div id="landing-3" data-aos="fade-right">
       <h3>Our Philosophy</h3>
       <p>We believe in the idea that wealth is borne not just from portfolios and bank accounts, but from the relationships and experiences that make us who we are. For us, the greatest investment isn’t in a “what,” it’s in a “who.” You.</p>
       <strong>See how our philosophy sets us apart.</strong>
     </div>
     <!-- LAYER FOUR -->
-    <div id="landing-4">
+    <div id="landing-4" data-aos="fade-left">
       <h3>Our Process</h3>
       <p>We don’t just manage your assets. We have your back. And we boldly forge the path to success guided by the beacon of your goals rather than our own. It begins with an in-depth analysis of where you are and where you want to go. Then we map out how to get you there.</p>
       <strong>Start your better tomorrow today.</strong>
@@ -157,7 +157,7 @@
   }
 
     .picture-stretch {
-      width: 100%;
+      width: 100vw;
       object-fit: cover;
       object-position: 0 80%;
     }
@@ -197,9 +197,9 @@
       width: 75%;
       text-align: center;
       margin: auto;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      grid-gap: 4rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      grid-gap: 7rem;
     }
   }
 
@@ -207,11 +207,6 @@
     #intro-grid{
       font-size: 3rem;
     }
-
-    #landing-logo {
-
-    }
-
 
   }
 

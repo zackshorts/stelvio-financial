@@ -50,7 +50,7 @@ export default {
 
   #app-header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
   }
 
