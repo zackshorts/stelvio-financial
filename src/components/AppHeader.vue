@@ -49,11 +49,11 @@
       methods: {
         showMenu: function () {
           document.getElementById("myNav").style.animation = "ease 2s";
-          document.getElementById("myNav").style.height = "100%";
+          document.getElementById("myNav").style.height = "100vh";
         },
 
         closeMenu: function () {
-          document.getElementById("myNav").style.height = "0%";
+          document.getElementById("myNav").style.height = "0vh";
         }
 
 
@@ -92,7 +92,7 @@
 
   .overlay {
     height: 0%;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -105,7 +105,7 @@
   .overlay-content {
     position: relative;
     top: 25%;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     margin-top: 30px;
   }
@@ -208,7 +208,7 @@
       padding-right: 1rem;
       padding-left: 1rem;
       text-align: right;
-      width: fit-content;
+      /*width: fit-content;*/
       position: absolute;
       right: 1rem;
       transition: background-color ease 0.8s;

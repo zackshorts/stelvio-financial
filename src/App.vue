@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <app-header id="app-header"></app-header>
-    <transition name="fade" mode="out-in">
+    <!--<transition name="fade" mode="out-in">-->
     <router-view/>
-    </transition>
+    <!--</transition>-->
     <app-footer id="app-footer"></app-footer>
   </div>
 </template>
@@ -53,6 +53,8 @@ export default {
     width: 100vw;
     z-index: 1;
   }
+
+
 
 
 </style>
